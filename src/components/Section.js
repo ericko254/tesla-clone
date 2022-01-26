@@ -1,9 +1,9 @@
 import React from 'react';
 import styled from 'styled-components';
 
-function Section({title, description, leftBtnText, rightBtnText, backgroundImg}) {
+function Section({title, description, leftBtnText, rightBtnText, backgroundImg }) {
   return (
-    <Wrap bg = { backgroundImg }>
+    <Wrap bgImage = { backgroundImg }>
         <ItemText>
             <h1>{ title }</h1>
             <p>{description}</p>
@@ -13,9 +13,10 @@ function Section({title, description, leftBtnText, rightBtnText, backgroundImg})
                 <LeftButton>
                     {leftBtnText}
                 </LeftButton>
+                { rightBtnText &&
                 <RightButton>
                     { rightBtnText }
-                </RightButton>
+                </RightButton>}
             </ButtonGroup>
             <DownArrow src="/images/down-arrow.svg" />
         </Buttons>
@@ -31,11 +32,12 @@ const Wrap = styled.div`
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    background-image: url('/images/model-y.jpg');
+    background-image: url('/images/model-s.jpg');
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    align-items: center
+    align-items: center;
+    background-image: ${props => `url("/images/${props.bgImage}")` }
 
 `
 

@@ -4,12 +4,12 @@ import Section from './Section';
 
 function Home() {
   return <Container>
-      <Section 
-        title = "Model S"
-        description = "Order Online for touchless delivery"
-        backgroundImg = "model-s.jpg"
-        leftBtnText = "Custom order"
-        rightBtnText = "Existing Inventory"
+     <Section 
+      title = "Model S"
+      description = "Order Online for touchless delivery"
+      backgroundImg = "model-s.jpg"
+      leftBtnText = "Custom order"
+      rightBtnText = "Existing Inventory"
       />
       <Section 
          title = "Model Y"
@@ -31,6 +31,26 @@ function Home() {
          backgroundImg = "model-x.jpg"
          leftBtnText = "Custom order"
          rightBtnText = "Existing Inventory"
+      />
+      <Section   
+           title = "Lowest Cost Solar Panels in America"
+           description = "Money-back Guarantee"
+           backgroundImg = "solar-panel.jpg"
+           leftBtnText = "Order now"
+           rightBtnText = "Learn more"
+      />
+      <Section   
+           title = "Solar for New Roofs"
+           description = "Solar Roof Costs Less Than a New Roof"
+           backgroundImg = "solar-roof.jpg"
+           leftBtnText = "Order now"
+           rightBtnText = "Learn more"
+      />
+      <Section   
+           title = "Accessories"
+           description = ""
+           backgroundImg = "accessories.jpg"
+           leftBtnText = "Shop now"
       />
   </Container>;
 }
