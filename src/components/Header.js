@@ -61,4 +61,4 @@ const RightMenu = styled.div`
   }
 `
 
-// const CustomMenu = styled(MenuIcon)``
+const CustomMenu = styled(MenuIcon)``
